@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Otilia Stretcu | teaching</title>
+  <!-- <title>Otilia Stretcu | teaching</title> -->
   <meta name="description" content="This is the personal website of Otilia Stretcu">
 
   <!-- Fonts and Icons -->
@@ -14,15 +14,15 @@
   <link rel="stylesheet" href="/assets/css/all.min.css">
   <link rel="stylesheet" href="/assets/css/academicons.min.css">
   <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="canonical" href="/teaching/">
+  <!-- <link rel="canonical" href="/teaching/"> -->
 </head>
 <body>
   <!-- Header -->
   <nav id="navbar" class="navbar fixed-top navbar-expand-md grey lighten-5 z-depth-1 navbar-light">
     <div class="container-fluid p-0">
-      
+
         <a class="navbar-brand title font-weight-lighter" href="/"><span class="font-weight-bold">Otilia</span> Stretcu</a>
-      
+
       <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -31,54 +31,54 @@
           <li class="nav-item ">
             <a class="nav-link" href="/">
               about
-              
+
             </a>
           </li>
-          
-            
-          
-            
+
+
+
+
               <li class="nav-item ">
                   <a class="nav-link" href="/cv/">
                     curriculum vitae
-                    
+
                   </a>
               </li>
-            
-          
-            
-          
-            
+
+
+
+
+
               <li class="nav-item ">
                   <a class="nav-link" href="/projects/">
                     projects
-                    
+
                   </a>
               </li>
-            
-          
-            
+
+
+
               <li class="nav-item ">
                   <a class="nav-link" href="/publications/">
                     publications
-                    
+
                   </a>
               </li>
-            
-          
-            
-              <li class="nav-item navbar-active font-weight-bold">
+
+
+
+              <!-- <li class="nav-item navbar-active font-weight-bold">
                   <a class="nav-link" href="/teaching/">
                     teaching
-                    
+
                       <span class="sr-only">(current)</span>
-                    
+
                   </a>
-              </li>
-            
-          
-            
-          
+              </li> -->
+
+
+
+
         </ul>
       </div>
     </div>
@@ -93,8 +93,8 @@
 
   <!-- Content -->
   <div class="content">
-    
-  <h1>teaching</h1>
+
+  <!-- <h1>teaching</h1> -->
   <h6>classes, workshops, and teaching material</h6>
 
 
@@ -165,8 +165,8 @@
   <!-- Footer -->
   <footer>
     &copy; Copyright 2021 Otilia Stretcu.
-    
-    
+
+
   </footer>
 
   <!-- Core JavaScript Files -->
@@ -188,13 +188,13 @@
       var progressBar = $('#progress');
       progressBar.css({ 'top': navbarHeight });
       var getMax = function() { return $(document).height() - $(window).height(); }
-      var getValue = function() { return $(window).scrollTop(); }   
+      var getValue = function() { return $(window).scrollTop(); }
       // Check if the browser supports the progress element.
       if ('max' in document.createElement('progress')) {
         // Set the 'max' attribute for the first time.
         progressBar.attr({ max: getMax() });
         progressBar.attr({ value: getValue() });
-    
+
         $(document).on('scroll', function() {
           // On scroll only the 'value' attribute needs to be calculated.
           progressBar.attr({ value: getValue() });
