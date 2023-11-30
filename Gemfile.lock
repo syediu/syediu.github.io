@@ -341,7 +341,9 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  base64
   classifier-reborn
+  drb
   faraday-retry
   feedjira
   github-pages
