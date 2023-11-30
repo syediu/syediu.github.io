@@ -255,10 +255,13 @@ sequenceDiagram
 {% endmermaid %}
 </code></pre></div></div>
 
-<div class="jekyll-diagrams diagrams mermaid">
-  Command Not Found: mmdc
-</div>
-
+<p>{\% mermaid \%}
+sequenceDiagram
+    participant John
+    participant Alice
+    Alice-»John: Hello John, how are you?
+    John–»Alice: Great!
+{\% endmermaid \%}</p>
 
   </article>
 
