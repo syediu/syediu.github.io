@@ -150,6 +150,28 @@ plugins:
   - jekyll-target-blank
   - jekyll-twitter-plugin
   - jemoji
+  - classifier-reborn
+  - jekyll
+  - jekyll-archives
+  - faraday-retry
+  - jekyll-diagrams
+  - jekyll-email-protect
+  - jekyll-feed
+  - jekyll-get-json
+  - jekyll-imagemagick
+  - jekyll-jupyter-notebook
+  - jekyll-link-attributes
+  - jekyll-minifier
+  - jekyll-paginate-v2
+  - jekyll-scholar
+  - jekyll-sitemap
+  - jekyll-toc
+  - jekyll-twitter-plugin
+  - jemoji
+  - mini_racer
+  - unicode_utils
+  - webrick
+  - github-pages
 
 # Sitemap settings
 defaults:
@@ -282,6 +304,3 @@ popper:
 medium_zoom:
   version: "1.0.6"
   integrity: "sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM="
-
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
