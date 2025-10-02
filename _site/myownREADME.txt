@@ -22,3 +22,9 @@ siu@siu-g3:~/syediu.github.io$ bundle exec jekyll serve
 copy http://127.0.0.1:4000
 
 and paste it in a web browser
+
+
+bundle exec jekyll serve -l -H localhost
+git checkout gh-pages
+git commit -m "Deploy site with blue text and green hover"
+git push origin gh-pages
