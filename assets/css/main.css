@@ -14199,16 +14199,15 @@ pre, code { font-family: 'Source Code Pro', monospace; font-weight: normal; font
 
 
 .job-banner {
-  background: linear-gradient(90deg, #1b5e20, #2e7d32); /* dark-to-mid green gradient */
-  border: 2px solid #66bb6a;  /* lighter green outline */
-  color: white;
+  background: #f0f7f0;
+  border-left: 4px solid #2e7d32;
+  color: #1b5e20;
   text-align: center;
-  padding: 14px 22px;
-  font-size: 1.15rem;
-  font-weight: 500;
-  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 0.95rem;
+  font-weight: 400;
+  border-radius: 4px;
   margin-bottom: 25px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* soft drop shadow */
 }
 
 .job-banner p {
@@ -14216,7 +14215,7 @@ pre, code { font-family: 'Source Code Pro', monospace; font-weight: normal; font
 }
 
 .job-banner strong {
-  font-weight: 700;
-  color: #ffeb3b; /* yellow highlight for key domains */
+  font-weight: 600;
+  color: #1b5e20;
 }
 
