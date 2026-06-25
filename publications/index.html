@@ -186,33 +186,29 @@
         <div id="aerocast2026-abstract" class="collapse">
           <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
 Autonomous aerial vehicles operating in shared
-airspace require accurate prediction of non-cooperative obstacle
-trajectories to enable proactive collision avoidance. Unlike coop-
-erative multi-agent systems where intentions are communicated,
-non-cooperative obstacles such as birds, debris, or uncontrolled
-drones exhibit unpredictable, multi-modal motion that cannot
-be adequately captured by deterministic prediction methods.
-We present a probabilistic trajectory prediction framework that
-combines a Transformer encoder with a Mixture Density Network
-(MDN) output head to generate calibrated uncertainty estimates
-over future 3D obstacle positions. Our approach addresses
-three key limitations of existing methods: (i) the inability of
-recurrent architectures to efficiently capture long-range temporal
-dependencies critical for detecting maneuver initiation, (ii) the
-lack of multi-modal output representations that reflect genuine
-behavioral uncertainty, and (iii) poor generalization of position-
-based encodings across different operating domains. We intro-
-duce a consecutive displacement encoding scheme that provides
-translation invariance while maintaining bounded input distri-
-butions amenable to Gaussian mixture modeling. Experimental
-validation on real-world quadrotor trajectory data demonstrates
-that our method achieves an Average Displacement Error (ADE)
-of 0.032 m and Final Displacement Error (FDE) of 0.089 m over
-a 3-second prediction horizon, while producing well-calibrated
-uncertainty estimates with Expected Calibration Error below
-0.05. The probabilistic outputs enable risk-aware motion plan-
-ning, advancing the safety of autonomous aerial operations in
-dynamic environments.          
+airspace must predict the future positions of non-cooperative
+obstacles to plan evasive maneuvers before a collision becomes
+unavoidable. Unlike cooperative systems that share intent, noncooperative obstacles such as birds, uncontrolled drones, or
+debris exhibit multi-modal motion that deterministic predictors
+cannot adequately represent. Existing methods either rely on
+recurrent encoders that propagate temporal information sequentially, limiting their ability to capture long-range kinematic
+precursors of maneuver initiation, or produce point forecasts that
+provide no distributional information to downstream planners.
+This paper presents AeroCast, a probabilistic trajectory prediction framework that combines a Transformer encoder with a
+Mixture Density Network output head to predict per-timestep
+Gaussian mixture distributions over future three-dimensional
+displacements. A translation-invariant consecutive displacement
+encoding and a calibration-oriented training objective address the
+input design and mode-degeneracy challenges specific to mixturebased aerial trajectory prediction. On a hybrid real-and-synthetic
+quadrotor corpus spanning nine motion categories, AeroCast
+reduces Average Displacement Error and Final Displacement
+Error by approximately 50% relative to the baselines over
+a five-second horizon, and achieves the lowest negative loglikelihood and Continuous Ranked Probability Score among all
+compared methods. Ablation analysis identifies velocity input and
+model capacity as the primary contributors to prediction quality,
+and positional encoding as essential for long-horizon trajectory
+coherence. AeroCast inference completes in 0.1 ms per sample,
+compatible with real-time onboard deployment at 100 Hz.         
 </div>
         </div>
       </div>
