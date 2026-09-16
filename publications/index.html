@@ -185,30 +185,7 @@
       <div class="col mt-2 p-0">
         <div id="aerocast2026-abstract" class="collapse">
           <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
-Autonomous aerial vehicles operating in shared
-airspace must predict the future positions of non-cooperative
-obstacles to plan evasive maneuvers before a collision becomes
-unavoidable. Unlike cooperative systems that share intent, noncooperative obstacles such as birds, uncontrolled drones, or
-debris exhibit multi-modal motion that deterministic predictors
-cannot adequately represent. Existing methods either rely on
-recurrent encoders that propagate temporal information sequentially, limiting their ability to capture long-range kinematic
-precursors of maneuver initiation, or produce point forecasts that
-provide no distributional information to downstream planners.
-This paper presents AeroCast, a probabilistic trajectory prediction framework that combines a Transformer encoder with a
-Mixture Density Network output head to predict per-timestep
-Gaussian mixture distributions over future three-dimensional
-displacements. A translation-invariant consecutive displacement
-encoding and a calibration-oriented training objective address the
-input design and mode-degeneracy challenges specific to mixturebased aerial trajectory prediction. On a hybrid real-and-synthetic
-quadrotor corpus spanning nine motion categories, AeroCast
-reduces Average Displacement Error and Final Displacement
-Error by approximately 50% relative to the baselines over
-a five-second horizon, and achieves the lowest negative loglikelihood and Continuous Ranked Probability Score among all
-compared methods. Ablation analysis identifies velocity input and
-model capacity as the primary contributors to prediction quality,
-and positional encoding as essential for long-horizon trajectory
-coherence. AeroCast inference completes in 0.1 ms per sample,
-compatible with real-time onboard deployment at 100 Hz.         
+Existing aerial-robotics benchmarks target vehicles from hundreds of grams to several kilograms and typically expose only high-level state data. They omit the actuator-level signals required to study nano-scale quadrotors, where low-Reynolds-number aerodynamics, coreless DC motor nonlinearities, and severe computational constraints invalidate models and controllers developed for larger vehicles. We introduce \emph{NanoBench}, an open-source multi-task benchmark collected on the commercially available Crazyflie~2.1 nano-quadrotor (takeoff weight \SI{27}{\gram}) in a Vicon motion capture arena. The dataset comprises 172~flight recordings spanning multi-frequency excitation, geometric trajectory tracking at three speed regimes, and long-duration battery-drain hover. Each recording provides synchronized Vicon ground truth, raw IMU data, onboard extended Kalman filter (EKF) estimates, PID controller internals, and motor PWM commands at \SI{100}{\hertz}, alongside battery telemetry at \SI{10}{\hertz}, cross-aligned by gyroscope-based correlation on a \SI{1}{\milli\second} search grid. NanoBench defines standardized evaluation protocols, train/test splits, and open-source baselines for three tasks: nonlinear system identification, closed-loop controller benchmarking, and onboard state estimation assessment. To our knowledge, it is the first public dataset to jointly provide actuator commands, controller internals, and estimator outputs with millimeter-accurate ground truth on a commercially available nano-scale aerial platform.        
 </div>
         </div>
       </div>
@@ -266,7 +243,7 @@ compatible with real-time onboard deployment at 100 Hz.
 
           <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#nano_bench-abstract" role="button" aria-expanded="false" aria-controls="nano_bench-abstract">Abstract</a>
           <a class="badge grey waves-effect font-weight-light mr-1" href="/assets/pdf/nanobench.pdf" target="_blank">PDF</a>
-          <!-- <a class="badge grey waves-effect font-weight-light mr-1" href="https://youtu.be/H6U0xaZAJQM" target="_blank">Video</a> -->
+          <a class="badge grey waves-effect font-weight-light mr-1" href="/assets/img/nanobench_demo.mp4" target="_blank">Video</a>
 
           <a class="badge grey waves-effect font-weight-light mr-1"
               data-toggle="collapse"
