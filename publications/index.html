@@ -101,6 +101,101 @@
 <p><br /></p>
 
 
+<!-- phd dissertation -->
+<div class="row m-0 p-0" style="border-top: 1px solid #ddd; flex-direction: row-reverse;">
+    <div class="col-sm-1 mt-2 p-0 pr-1">
+      <h3 class="bibliography-year">2026</h3>
+    </div>
+    <div class="col-sm-11 p-0">
+      <ol class="bibliography"><li><div class="row m-0 mt-3 p-0">
+  <div class="col-sm-1 p-0 abbr">
+
+
+        <a class="badge font-weight-bold light-green darken-1 align-middle" style="width: 65px; white-space: normal;" href="https://www.proquest.com/docview/3383580868?accountid=7084&amp;sourcetype=Dissertations%20&amp;%20Theses" target="_blank">
+          PhD Dissertation
+        </a>
+
+
+  </div>
+  <div class="col-sm-11 mt-2 mt-sm-0 p-0 pl-xs-0 pl-sm-4 pr-xs-0 pr-sm-2">
+
+    <div id="phddissertation2026" class="col p-0">
+      <h5 class="title mb-0">Uncertainty-Aware Probabilistic Forecasting of Non-Cooperative Dynamic Obstacles for Safe Autonomous Aerial Navigation</h5>
+      <div class="author">
+
+
+
+
+
+                <nobr><em>Syed Izzat Ullah</em></nobr>
+
+
+      </div>
+
+      <div>
+        <p class="periodical font-italic">
+
+            Ph.D. Dissertation, Texas A&amp;M University-Corpus Christi, Corpus Christi, Texas
+
+        </p>
+      </div>
+
+      <div class="col p-0">
+
+          <a class="badge grey waves-effect font-weight-light mr-1" data-toggle="collapse" href="#phddissertation2026-abstract" role="button" aria-expanded="false" aria-controls="phddissertation2026-abstract">Abstract</a>
+          <a class="badge grey waves-effect font-weight-light mr-1" href="/assets/pdf/syed_phd_dissertation.pdf" target="_blank">PDF</a>
+          <a class="badge grey waves-effect font-weight-light mr-1" href="https://www.proquest.com/docview/3383580868?accountid=7084&amp;sourcetype=Dissertations%20&amp;%20Theses" target="_blank">HTML</a>
+
+          <a class="badge grey waves-effect font-weight-light mr-1"
+              data-toggle="collapse"
+              href="#phddissertation2026-bibtex"
+              role="button"
+              aria-expanded="false"
+              aria-controls="phddissertation2026-bibtex">
+              Cite
+            </a>
+
+
+      </div>
+
+
+      <div class="col mt-2 p-0">
+      <div id="phddissertation2026-bibtex" class="collapse">
+        <div class="card card-body font-weight-light mr-0 mr-sm-3 p-3"
+            style="background-color:#f8f9fa; font-family: monospace; font-size: 0.85em;">
+          <pre>@phdthesis{syedphddissertation,
+  author  = {Ullah, Syed Izzat},
+  title   = {Uncertainty-Aware Probabilistic Forecasting of Non-Cooperative Dynamic Obstacles for Safe Autonomous Aerial Navigation},
+  school  = {Texas A\&amp;M University-Corpus Christi},
+  year    = {2026},
+  address = {Corpus Christi, Texas},
+  type    = {Ph.D. dissertation}
+}
+    </pre>
+        </div>
+      </div>
+    </div>
+
+
+      <div class="col mt-2 p-0">
+        <div id="phddissertation2026-abstract" class="collapse">
+          <div class="abstract card card-body font-weight-light mr-0 mr-sm-3 p-3">
+Unmanned Aerial Vehicles (UAVs) are increasingly deployed in complex, dynamic environments for applications such as urban air mobility, surveillance, emergency response, and package delivery. Safe autonomous navigation in airspace shared with non-cooperative dynamic obstacles, such as birds, unregistered drones, and other uninformed aerial agents, remains a fundamental challenge in aerial robotics. Existing motion planning methods are constrained by significant limitations that undermine their effectiveness in real-world scenarios. First, they often rely on linear or constant-velocity motion models that do not capture the nonlinear and context-dependent behavior of dynamic obstacles, which can lead to delayed or inadequate avoidance maneuvers. Second, most trajectory planning frameworks lack modularity, treating obstacle prediction and planning as separate processes, which hinders proactive decision-making and limits the integration of advanced prediction models. Third, the absence of standardized benchmarking infrastructure to characterize the platform-level uncertainties such as actuator nonlinearities, estimator drift, and battery-dependent thrust degradation on resource-constrained aerial systems, that affect the perception-prediction-planning pipeline.
+<br /><br />
+This dissertation addresses these limitations through four contributions within a modular framework for uncertainty-aware UAV trajectory planning. First, POF+MADER integrates a decentralized Kalman filter-based Probabilistic Obstacle Filter with optimization-based trajectory planners, replacing the assumption of perfect obstacle trajectory knowledge with real-time uncertainty-aware forecasts embedded as dynamic constraints. Evaluation across 800 simulation runs yields a 38.75% improvement in success rate with a 0.8% increase in navigation time, and hardware experiments on Crazyflie 2.1 UAVs show a 25% reduction in collision rate under realistic sensing conditions. Second, SynTraG introduces a parametric trajectory generator that produces configurable three-dimensional corpora of non-cooperative aerial obstacle motion using randomized kinematic primitives with heteroscedastic noise, and releases 47,894 trajectories to address the lack of public training data in this domain. Building on this data foundation, the third contribution, AeroCast, combines a Pre-LN Transformer encoder with a Mixture Density Network output head to predict per-timestep Gaussian mixture distributions over future three-dimensional displacements. On a hybrid real-and-synthetic corpus of 90,116 sequences spanning nine motion categories, AeroCast reduces Average Displacement Error and Final Displacement Error by approximately 50% relative to the strongest recurrent baseline, achieves the lowest negative log-likelihood among all compared methods, and completes inference in 0.1 ms per sample. Finally, NanoBench introduces a multitask benchmark for the Crazyflie 2.1 nano-quadrotor comprising over 170 flight trajectories with synchronized Vicon ground truth, raw IMU measurements, onboard EKF estimates, PID controller internals, and motor PWM commands at 100 Hz. NanoBench defines standardized protocols for system identification, controller benchmarking, and state estimation, and establishes the first open dataset to jointly expose actuator-level and estimator-level signals with millimeter-accurate external ground truth on a commercially available nano-scale platform.
+<br /><br />
+These contributions show that uncertainty in autonomous UAV navigation must be addressed across the full pipeline rather than within any single module. In this dissertation, uncertainty is treated at the planning level through probabilistic trajectory generation, at the data level through synthetic corpus construction with realistic localization noise, at the prediction level through calibrated multi-modal forecasting, and at the platform level through benchmarked characterization of actuation and estimation effects on resource-constrained hardware.
+</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</li></ol>
+    </div>
+  </div>
+
 
 <!-- AeroCast -->
 <div class="row m-0 p-0" style="border-top: 1px solid #ddd; flex-direction: row-reverse;">
@@ -329,7 +424,7 @@ Existing aerial-robotics benchmarks target vehicles from hundreds of grams to se
       <div>
         <p class="periodical font-italic">
 
-            Accepted to be published in Advances in Automation and Robotics Research, Springer.
+            Advances in Automation and Robotics Research, Springer.
         </p>
       </div>
 
